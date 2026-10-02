@@ -1,0 +1,20 @@
+[
+  {
+    "id": "healthcare-recovery-and-access-control-lab-devops",
+    "title": "Healthcare Recovery and Access Control Lab",
+    "family": "Cloud / DevOps",
+    "folder": "devops/healthcare-recovery-and-access-control-lab-devops"
+  },
+  {
+    "id": "ecommerce-cloud-capacity-and-cost-workbench-devops",
+    "title": "Ecommerce Cloud Capacity and Cost Workbench",
+    "family": "Cloud / DevOps",
+    "folder": "devops/ecommerce-cloud-capacity-and-cost-workbench-devops"
+  },
+  {
+    "id": "education-application-delivery-platform-devops",
+    "title": "Education Application Delivery Platform",
+    "family": "Cloud / DevOps",
+    "folder": "devops/education-application-delivery-platform-devops"
+  }
+]

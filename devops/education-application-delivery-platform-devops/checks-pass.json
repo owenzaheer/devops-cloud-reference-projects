@@ -1,0 +1,7 @@
+{
+  "authorization": true,
+  "tenantIsolation": true,
+  "rollback": true,
+  "functional": true,
+  "latency": true
+}

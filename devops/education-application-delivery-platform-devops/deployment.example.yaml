@@ -1,0 +1,30 @@
+# Example only. Build and scan this image before applying to a local cluster.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: assessment-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: assessment-demo}
+  template:
+    metadata:
+      labels: {app: assessment-demo}
+    spec:
+      automountServiceAccountToken: false
+      securityContext: {runAsNonRoot: true, runAsUser: 10001}
+      containers:
+        - name: assessment
+          image: assessment-demo:local
+          ports: [{containerPort: 8000}]
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: [ALL]}
+          resources:
+            requests: {cpu: 100m, memory: 128Mi}
+            limits: {cpu: 500m, memory: 256Mi}
+          readinessProbe:
+            httpGet: {path: /api/health, port: 8000}
+          livenessProbe:
+            httpGet: {path: /api/health, port: 8000}
