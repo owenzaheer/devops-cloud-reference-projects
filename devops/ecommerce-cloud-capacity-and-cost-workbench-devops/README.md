@@ -6,6 +6,6 @@ From this folder, after installing `../requirements.txt`, run `python lab.py --h
 
 Models required instance counts, utilization and normalized costs from explicitly supplied throughput and unit-cost inputs. `--rps`, `--capacity`, `--target`, `--unit-cost`, `--hours` select the scenario. Prices are arbitrary modeled units, not current AWS prices. `capacity.tf` shows the same model as a resource-free Terraform planning exercise.
 
-## Review the code
+## Architecture
 
-[Architecture and failure boundaries](ARCHITECTURE.md). Shared workflow modules and tests are in the parent stack folder. This repository is intended for source review; no hosted application is required.
+[Architecture and failure boundaries](ARCHITECTURE.md). Shared workflow modules and tests are in the parent stack folder.

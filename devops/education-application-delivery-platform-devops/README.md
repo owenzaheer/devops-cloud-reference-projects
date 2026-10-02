@@ -6,6 +6,6 @@ From this folder, after installing `../requirements.txt`, run `python lab.py --h
 
 Applies explicit functional, latency, authorization, tenant isolation and rollback checks to an atomically saved release state. Failed gates retain the previously active version. Use `--checks checks-fail.json` to observe rejection. Kubernetes manifests are examples requiring a locally built image and cluster; they have not been applied or validated against a live cluster.
 
-## Review the code
+## Architecture
 
-[Architecture and failure boundaries](ARCHITECTURE.md). Shared workflow modules and tests are in the parent stack folder. This repository is intended for source review; no hosted application is required.
+[Architecture and failure boundaries](ARCHITECTURE.md). Shared workflow modules and tests are in the parent stack folder.
